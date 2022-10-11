@@ -1,0 +1,105 @@
+@import '../../styles/config.scss';
+
+.header-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid rgb(177, 177, 177);
+    background: none !important;
+    padding-top: 1em;
+    position: absolute;
+    z-index: 10000000;
+}
+.header-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.header-item{
+    padding-left: 15px;
+    padding-right: 10px;
+    transition: 0.3s;
+}
+.header-item:hover{
+    background-color: #bcb1fc;
+    transition: 0.3s;
+}
+.header-items-response{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 20%;
+}
+
+.header-items:nth-child(2) div{
+    // background-color: red;
+    height: 40px;
+    // width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo{
+    width: 130px;
+    margin-top: 10px;
+}
+.header-link{
+    color: #9775f3;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: $headerFont;
+}
+.header-btn-quote{
+    background-color: red;
+}
+.login-btn{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 0.4s;
+}
+.login-btn:hover{
+    border-radius: 5px;
+    background-color: rgb(212, 212, 212);
+    transition: 0.4s;
+}
+.login-btn-icon{
+    position: absolute;
+    color: #727272;
+}
+
+@media only screen and (max-width: 1440px) {
+  }
+  
+  /* Medium Laptop */
+  @media only screen and (max-width: 1024px) {
+    
+.header-items-response{
+    width: 25%;
+}
+  }
+  
+  /* Tablet */
+  @media only screen and (max-width: 768px) {
+      .header-wrapper{
+          display: none;
+      }
+  }
+  
+  /* Mobile L */
+  @media only screen and (max-width: 426px) {
+  }
+  
+  @media only screen and (max-width: 375px) {
+  }
+  
+  @media only screen and (min-width: 1024px) and (max-width: 1370px) {
+  }
+  
+  @media only screen and (max-width: 320px) {
+  }
